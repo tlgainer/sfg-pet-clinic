@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+<!--/*@thymesVar id="owner" type="guru.springframework.sfgpetclinic.model.Owner"*/-->
+
     <h1 th:text="'List of Owners'">List of Owners...</h1>
     <ul>
         <li th:each="owner: ${owners}"><span th:text="${owner.firstName}"></span></li>
