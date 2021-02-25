@@ -9,16 +9,20 @@
 
     <h2 th:text="'List of Owners'">List of Owners...</h2>
     <table id="ownders" class="table table-striped">
-        <tr>
-            <th style="width: 150px;">ID</th>
-            <th style="width: 150px;">First Name</th>
-            <th style="width: 150px;">Last Name</th>
-        </tr>
-        <tr th:each="owner: ${owners}">
-            <td th:text="${owner.id}"></td>
-            <td th:text="${owner.firstName}"></td>
-            <td th:text="${owner.lastName}"></td>
-        </tr>
+        <thead>
+            <tr>
+                <th style="width: 150px;">ID</th>
+                <th style="width: 150px;">First Name</th>
+                <th style="width: 150px;">Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="owner: ${owners}">
+                <td th:text="${owner.id}"></td>
+                <td th:text="${owner.firstName}"></td>
+                <td th:text="${owner.lastName}"></td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
