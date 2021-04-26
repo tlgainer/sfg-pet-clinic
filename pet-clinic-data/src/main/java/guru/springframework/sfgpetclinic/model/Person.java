@@ -10,6 +10,8 @@ public class Person extends BaseEntity {
     private String firstName;
 
     @Column(name = "last_name")
+    private String lastName;
+
     public String getFirstName() {
         return firstName;
     }
@@ -26,5 +28,5 @@ public class Person extends BaseEntity {
         this.lastName = lastName;
     }
 
-    private String lastName;
+
 }
