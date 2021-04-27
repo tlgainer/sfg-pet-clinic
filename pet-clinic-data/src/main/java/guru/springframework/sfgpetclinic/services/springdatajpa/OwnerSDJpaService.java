@@ -13,7 +13,7 @@ import java.util.Optional;
 import java.util.Set;
 
 @Service
-@Profile("sprintdatajpa")
+@Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
 
 
